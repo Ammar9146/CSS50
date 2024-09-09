@@ -1,0 +1,281 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+ 
+header {
+    background: url('img/banner.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav .logo img {
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: rgb(148, 145, 146);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c03;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+ 
+.courses, .courses-offer {
+    padding: 50px;
+    text-align: center;
+}
+
+.course-cards, .facility-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-cards .card, .facility-cards .card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.course-cards .card h3, .facility-cards .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.global-campus {
+    padding: 50px;
+    text-align: center;
+}
+
+.global-campus .campus-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.global-campus .campus-images img {
+    width: 30%;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.testimonials {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.testimonial-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.testimonial {
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.testimonial h4 {
+    margin-top: 1rem;
+    color: #3e3c3c;
+}
+
+.enroll {
+    background-image: url('img/banner2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.enroll h2 {
+    margin-bottom: 1.5rem;
+}
+
+.enroll button {
+    padding: 0.75rem 1.5rem;
+    background-color: #c2c9d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enroll button:hover {
+    background-color: #c7ced6;
+}
+
+.about-us {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about-us .team {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.about-us .team img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+ 
+
+ 
+@media (max-width: 900px) and (min-width: 600px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .course-cards .card, .facility-cards .card {
+        width: 45%;
+    }
+
+    .global-campus .campus-images img {
+        width: 45%;
+    }
+
+    .testimonial-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 90%;
+    }
+}
+
+ 
+@media (max-width: 599px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .course-cards .card, .facility-cards .card {
+        width: 100%;
+    }
+
+    .global-campus .campus-images img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .testimonial-box {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+}
